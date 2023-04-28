@@ -1,5 +1,10 @@
-# Ngram Type
+# French Ngram Type (WIP)
 
+This project is a fork of https://github.com/ranelpadon/ngram-type, but using French ngrams that I extracted
+myself. The hosted version is located at https://edmundlam.github.io/ngram-type-fr/
+
+
+---
 
 ## About
 
