@@ -1,9 +1,29 @@
 # French Ngram Type
 
-This project is a fork of https://github.com/ranelpadon/ngram-type, but using French ngrams that I extracted
-myself. The hosted version is located at https://edmundlam.github.io/ngram-type-fr/
+This project is a fork of https://github.com/ranelpadon/ngram-type, 
+but using French ngrams that I extracted myself. The hosted version 
+is located at https://edmundlam.github.io/ngram-type-fr/.
 
-For how I generated the French n-grams, see the [ETL](https://github.com/edmundlam/ngram-type-fr/tree/master/etl) section.
+For how I extracted the French n-grams, see the 
+[ETL](https://github.com/edmundlam/ngram-type-fr/tree/master/etl) section.
+
+
+The following table compares the top 10 bigrams, trigrams and tetragrams in used in 
+the English and French version of Ngram-Type. 
+
+|  # | Bigrams (en) | Bigrams (fr) | Trigrams (en) | Trigrams (fr) | Tetragrams (en) | Tetragrams (fr) |
+|:--:|:------------:|:------------:|:-------------:|:-------------:|:---------------:|:---------------:|
+|  1 |      th      |      le      |      the      |      ent      |       tion      |       dans      |
+|  2 |      he      |      de      |      and      |      les      |       atio      |       ment      |
+|  3 |      in      |      en      |      ing      |      ait      |       that      |       pour      |
+|  4 |      er      |      re      |      ion      |      lle      |       ther      |       omme      |
+|  5 |      an      |      ai      |      tio      |      our      |       with      |       étai      |
+|  6 |      re      |      ou      |      ent      |      tre      |       ment      |       plus      |
+|  7 |      on      |      on      |      ati      |      ous      |       ions      |       tout      |
+|  8 |      at      |      qu      |      for      |      des      |       this      |       vous      |
+|  9 |      en      |      nt      |      her      |      ais      |       here      |       tait      |
+| 10 |      nd      |      it      |      ter      |      ant      |       from      |       mais      |
+
 
 Original README content below the break:
 
