@@ -5,6 +5,8 @@ myself. The hosted version is located at https://edmundlam.github.io/ngram-type-
 
 For how I generated the French n-grams, see the [ETL](https://github.com/edmundlam/ngram-type-fr/tree/master/etl) section.
 
+Original README content below the break:
+
 ---
 
 ## About
