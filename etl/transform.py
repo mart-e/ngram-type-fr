@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-This script was generated from the free version of ChatGPT on Mar 23, 2023.
+This script was generated from the Mar 23, 2023 free version of ChatGPT.
 
 Prompt: 
 
