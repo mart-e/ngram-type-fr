@@ -83,7 +83,6 @@ window.words = [
     "toutes",
     "cela",
     "temps",
-    "",
     "car",
     "après",
     "homme",
