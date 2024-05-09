@@ -1,15 +1,24 @@
 # French Ngram Type
 
-This project is a fork of https://github.com/ranelpadon/ngram-type, 
-but using French ngrams that I extracted myself. The hosted version 
-is located at https://edmundlam.github.io/ngram-type-fr/.
+Application d’apprentissage de la dacthylographie en répétant des suites de n-grammes.
 
-For how I extracted the French n-grams, see the 
-[ETL](https://github.com/edmundlam/ngram-type-fr/tree/master/etl) section.
+Les bigrammes, trigrammes et tétragrammes sont les suites de 2, 3 et 4 symboles les plus fréquents en Français. Les répétere permet de s’entrainer de façon efficace et de développer une mémoire musculaire des enchainements les plus fréquents.
 
+Accessible à https://mart-e.github.io/ngram-type-fr/.
 
-The following table compares the top 10 bigrams, trigrams and tetragrams in used in 
-the English and French version of Ngram-Type. 
+## Utilisation
+
+J’ai trouvé efficace de m’entrainer en suivant la méthode suivante : commencer avec un faible nombre de combinaison (2 ou 3). Une fois tous les excercices réussis, augmenter le nombre de combinaison de 1 et recommencer. Laisser la précision à des valeurs hautes (98-100%).
+
+Assez rapidement, un rythme s’installe et la vitesse augmente. L’on peut alors augmenter les besoins en vitesse également.
+
+## Histoire
+
+Le projet initial est https://github.com/ranelpadon/ngram-type pour l’Anglais.
+
+Une version francophone a ensuite été développée à https://github.com/edmundlam/ngram-type-fr. edmundlam ayant fait l’analyse des mots les plus fréquents en Français ci-dessous.
+
+Ces deux projets ne semblent plus être maintenus, ceci est mon propre fork pour ajouter des traductions et quelques fonctionnalités (support des `’`, etc.)
 
 |  # | Bigrams (en) | Bigrams (fr) | Trigrams (en) | Trigrams (fr) | Tetragrams (en) | Tetragrams (fr) |
 |:--:|:------------:|:------------:|:-------------:|:-------------:|:---------------:|:---------------:|
@@ -25,7 +34,7 @@ the English and French version of Ngram-Type.
 | 10 |      nd      |      it      |      ter      |      ant      |       from      |       mais      |
 
 
-Original README content below the break:
+README orginial ci-dessous :
 
 ---
 
