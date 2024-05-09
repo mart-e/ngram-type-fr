@@ -245,23 +245,31 @@
             <fieldset class="settings-module col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
                 <legend>Contenu</legend>
                 <div class="form-group">
-                    <label class="col-form-label col-form-label-sm">Combination</label>
+                    <label class="col-form-label col-form-label-sm"
+                        title="Nombre de ngrams différents">Combinaison</label>
                     <input v-model.number="data[data['source']].combination" v-on:change="refreshPhrases"
-                        class="form-control form-control-sm" type="number" min="1">
-                    <label class="col-form-label col-form-label-sm">Répétition</label>
+                        class="form-control form-control-sm" type="number" min="1"
+                        title="Nombre de ngrams différents">
+                    <label class="col-form-label col-form-label-sm"
+                        title="Répétition de chaque ngram">Répétition</label>
                     <input v-model.number="data[data['source']].repetition" v-on:change="refreshPhrases"
-                        class="form-control form-control-sm" type="number" min="1">
+                        class="form-control form-control-sm" type="number" min="1"
+                        title="Répétition de chaque ngram">
                 </div>
             </fieldset>
             <fieldset class="settings-module col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
                 <legend>Objectif</legend>
                 <div class="form-group">
-                    <label class="col-form-label col-form-label-sm">WPM</label>
+                    <label class="col-form-label col-form-label-sm"
+                        title="mots par minute (1 mot = 5 caractères)">WPM</label>
                     <input v-model.number="data[data['source']].minimumWPM" v-on:change="save"
-                        class="form-control form-control-sm" type="number" min="1" max="500">
-                    <label class="col-form-label col-form-label-sm">Précision</label>
+                        class="form-control form-control-sm" type="number" min="1" max="500"
+                        title="mots par minute (1 mot = 5 caractères)">
+                    <label class="col-form-label col-form-label-sm"
+                        title="Pourcentage d’erreurs toléré (100 = sans faute)">Précision</label>
                     <input v-model.number="data[data['source']].minimumAccuracy" class="form-control form-control-sm"
-                        type="number" min="1" max="100" v-on:change="save">
+                        type="number" min="1" max="100" v-on:change="save"
+                        title="Pourcentage d’erreurs toléré (100 = sans faute)">
                 </div>
             </fieldset>
         </div>
@@ -336,8 +344,8 @@
 
         <!--Stats start-->
         <div class="center stats mt-auto">
-            <h4>WPM: {{ rawWPM }} </h4>
-            &nbsp; &nbsp; &nbsp; &nbsp; <h4>Précision: {{ accuracy }} % </h4>
+            <h4 title="mots par minute (1 mot = 5 caractères)">WPM: {{ rawWPM }} </h4>
+            &nbsp; &nbsp; &nbsp; &nbsp; <h4 title="Pourcentage d’erreurs toléré (100 = sans faute)">Précision: {{ accuracy }} % </h4>
             &nbsp; &nbsp; &nbsp; &nbsp; <h4>Moyenne WPM: {{ averageWPM }} </h4>
         </div>
         <!--Stats end-->
