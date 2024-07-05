@@ -10,7 +10,7 @@ Accessible à https://mart-e.github.io/ngram-type-fr/.
 
 J’ai trouvé efficace de m’entrainer en suivant la méthode suivante : commencer avec un faible nombre de combinaison (2 ou 3). Une fois tous les excercices réussis, augmenter le nombre de combinaison de 1 et recommencer. Laisser la précision à des valeurs hautes (98-100%).
 
-Assez rapidement, un rythme s’installe et la vitesse augmente. L’on peut alors augmenter les besoins en vitesse également.
+Assez rapidement, un rythme s’installe et la vitesse augmente naturellement. L’on peut alors augmenter les besoins en vitesse également.
 
 ## Histoire
 
