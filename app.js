@@ -278,12 +278,40 @@ var ngramTypeConfig = {
 
             while (ngrams.length) {
                 var ngramsSublist = ngrams.slice(0, numberOfItemsToCombine);
-                var subPhrase = ngramsSublist.join(' ');
+
+                let subPhrase = "";
+                for (let i=0; i < ngramsSublist.length; i++) {
+                    if (ngramsSublist[i][0] === "'" && subPhrase.slice(-1) === " ") {
+                        // remove trailing space if followed by '
+                        subPhrase = subPhrase.slice(0, -1);
+                    }
+                    subPhrase += ngramsSublist[i];
+                    if (i+1 === ngramsSublist.length || ngramsSublist[i].slice(-1) === "'") {
+                        continue;
+                    }
+                    // add trailing space if not last or ending by '
+                    subPhrase += " ";
+                }
                 var _phrase = [];
                 for (var i = 0; i < repetitions; i++) {
                     _phrase.push(subPhrase);
                 }
-                phrases.push(_phrase.join(' '));
+
+                let fullphrase = "";
+                for (let i=0; i < _phrase.length; i++) {
+                    if (_phrase[i][0] === "'" && fullphrase.slice(-1) === " ") {
+                        // remove trailing space if followed by '
+                        fullphrase = fullphrase.slice(0, -1);
+                    }
+                    fullphrase += _phrase[i];
+                    if (i+1 === _phrase.length || _phrase[i].slice(-1) === "'") {
+                        continue;
+                    }
+                    // add trailing space if not last or ending by '
+                    fullphrase += " ";
+                }
+
+                phrases.push(fullphrase);
                 // Remove the processed ngrams.
                 ngrams.splice(0, numberOfItemsToCombine);
             }
