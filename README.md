@@ -2,7 +2,7 @@
 
 Application d’apprentissage de la dacthylographie en répétant des suites de n-grammes.
 
-Les bigrammes, trigrammes et tétragrammes sont les suites de 2, 3 et 4 symboles les plus fréquents en Français. Les répétere permet de s’entrainer de façon efficace et de développer une mémoire musculaire des enchainements les plus fréquents.
+Les bigrammes, trigrammes et tétragrammes sont les suites de 2, 3 et 4 symboles les plus fréquents en Français. Les répétitions permettent de s’entrainer de façon efficace et de développer une mémoire musculaire des enchainements les plus fréquents.
 
 Accessible à https://mart-e.github.io/ngram-type-fr/.
 
